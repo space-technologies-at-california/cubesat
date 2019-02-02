@@ -1,0 +1,33 @@
+
+
+--- Josh:
+
+[mbed] Global config:
+ARM_PATH=/home/zhou/ARMCompiler6.10/bin
+ARMLMD_LICENSE_FILE=/home/zhou/ARMCompiler6.10/license.txt
+GCC_ARM_PATH=/home/zhou/bin/gcc-arm/bin/
+ARMC6_PATH=/home/zhou/ARMCompiler6.11/bin/
+
+[mbed] Local config (/home/zhou/berkeley/stac/cubesat/test/mbed-os-example-blinky):
+TOOLCHAIN=GCC_ARM
+TARGET=NUCLEO_L432KC
+
+
+
+
+
+        cmopile:
+
+        mbed compile -m (NUCLEO_L432KC|detect) -t GCC_ARM
+
+             L432KC | F401RE
+
+
+
+
+minicom -D [tty]
+minicom -D /dev/ttyACM0
+    - set baud, etc
+
+check ports:
+      - ? how do
